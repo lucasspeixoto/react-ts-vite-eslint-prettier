@@ -1,15 +1,44 @@
-# Vite + React + Typescript + Eslint + Prettier
+<h1 align="center">
+   Template React, Vite, TypeScript e Material UI
+</h1>
 
-A starter for React with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
+<br>
 
-![Vite + React + Typescript + Eslint + Prettier](/resources/screenshot.png)
+## 💻 Projeto
 
-I found out about Vite and I wanted to have a boilerplate for the technologies that I use. You can find more about these in the following links: [Vite](https://github.com/vitejs/vite), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Eslint](https://eslint.org/), [Prettier](https://prettier.io/).
+[Template](https://github.com/lucasspeixoto/template_react_typescript_material) É um projeto
+de estruturação de projetos com React, TypeScript e material ui entre outras tecnologias.
 
-## Installation
+## ✨ Objetivo
 
-Clone the repo and run `yarn install`
+O Objetivo inicial foi a facilitação de inicio em projetos com as seguntes tecnologias
 
-## Start
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Material UI](https://mui.com/getting-started/usage/)
+- [Vite](https://vitejs.dev/)
 
-After the successfull installation of the packages: `yarn dev`
+## 🚀 Instalação
+
+```bash
+# Clone o repositório e entre na pasta do projeto
+$ git clone https://github.com/lucasspeixoto/react-ts-vite-eslint-prettier && cd react-ts-vite-eslint-prettier
+
+# Instale as dependências
+$ npm install
+# ou
+$ yarn install
+
+# Execute a aplicação
+$ npm start
+# ou
+$ yarn start
+
+# Abra http://localhost:3000 no seu navegador para ver a aplicação rodando!
+```
+
+## 📝 Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para obter mais detalhes.
+
+---
