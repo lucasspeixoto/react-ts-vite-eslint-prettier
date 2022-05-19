@@ -9,6 +9,10 @@
 [Template](https://github.com/lucasspeixoto/template_react_typescript_material) É um projeto
 de estruturação de projetos com React, TypeScript e material ui entre outras tecnologias.
 
+## 🔖 Layout
+
+![interface](src/assets/layout.png 'Layout')
+
 ## ✨ Objetivo
 
 O Objetivo inicial foi a facilitação de inicio em projetos com as seguntes tecnologias
