@@ -1,7 +1,12 @@
+import { Routes } from 'core/config/routes';
 import React from 'react';
 
 function App() {
-  return <h1>React TypeScript Vite Eslint Prettier</h1>;
+  return (
+    <React.Fragment>
+      <Routes />
+    </React.Fragment>
+  );
 }
 
 export default App;
