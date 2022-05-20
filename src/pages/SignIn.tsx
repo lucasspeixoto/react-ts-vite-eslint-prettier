@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-
 import { Login } from '@mui/icons-material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Avatar from '@mui/material/Avatar';
@@ -15,7 +14,7 @@ import AuthButton from 'components/elements/AuthButton';
 import Switch from 'components/elements/Switch';
 import Copyright from 'components/widgets/Copyright';
 import { useTheme } from 'core/hooks/useTheme';
-import * as React from 'react';
+import React, { ChangeEvent, useState } from 'react';
 
 const SignIn: React.FC = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
@@ -32,11 +31,11 @@ const SignIn: React.FC = () => {
   /**
    * checked = true (Na direita) Dark | false (Na esquerda) Light
    */
-  const [checked, setChecked] = React.useState<boolean>(() => {
+  const [checked, setChecked] = useState<boolean>(() => {
     return theme == 'dark' ? true : false;
   });
 
-  const changeThemeHandle = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const changeThemeHandle = (event: ChangeEvent<HTMLInputElement>) => {
     setChecked(event.target.checked);
     theme == 'dark' ? changeTheme('light') : changeTheme('dark');
   };

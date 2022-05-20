@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/no-autofocus */
-import { Login } from '@mui/icons-material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Checkbox from '@mui/material/Checkbox';
@@ -16,10 +16,10 @@ import AuthButton from 'components/elements/AuthButton';
 import Switch from 'components/elements/Switch';
 import Copyright from 'components/widgets/Copyright';
 import { useTheme } from 'core/hooks/useTheme';
-import * as React from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
 
 const SignUp: React.FC = () => {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
@@ -33,11 +33,11 @@ const SignUp: React.FC = () => {
   /**
    * checked = true (Na direita) Dark | false (Na esquerda) Light
    */
-  const [checked, setChecked] = React.useState<boolean>(() => {
+  const [checked, setChecked] = useState<boolean>(() => {
     return theme == 'dark' ? true : false;
   });
 
-  const changeThemeHandle = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const changeThemeHandle = (event: ChangeEvent<HTMLInputElement>) => {
     setChecked(event.target.checked);
     theme == 'dark' ? changeTheme('light') : changeTheme('dark');
   };
@@ -125,7 +125,7 @@ const SignUp: React.FC = () => {
               type="submit"
               disabled={false}
               label="Cadastrar"
-              icon={<Login />}
+              icon={<PersonAddAlt1Icon />}
             />
             <Grid container justifyContent="flex-end">
               <Grid item>
