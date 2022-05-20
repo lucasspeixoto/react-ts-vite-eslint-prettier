@@ -59,7 +59,6 @@ const SignIn: React.FC = () => {
         />
         <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square>
           <Switch checked={checked} onChange={changeThemeHandle} />
-
           <Box
             sx={{
               my: 8,
