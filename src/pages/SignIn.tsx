@@ -15,15 +15,13 @@ import AppButton from 'components/elements/AppButton';
 import Switch from 'components/elements/Switch';
 import Copyright from 'components/widgets/Copyright';
 import { useTheme } from 'core/hooks/useTheme';
+import { useToggle } from 'core/hooks/useToggle';
 import React, { ChangeEvent, useState } from 'react';
 
 const SignIn: React.FC = () => {
   const { theme, changeTheme } = useTheme();
 
-  //true (Na direita) Dark | false (Na esquerda) Light
-  const [checked, setChecked] = useState<boolean>(() => {
-    return theme == 'dark' ? true : false;
-  });
+  const [checked, setChecked] = useToggle(theme === 'dark' ? true : false);
 
   const [isLoadingButton, setIsLoadingButton] = useState(false);
 
@@ -40,8 +38,10 @@ const SignIn: React.FC = () => {
     }, 1500);
   };
 
-  const changeThemeHandle = (event: ChangeEvent<HTMLInputElement>) => {
-    setChecked(event.target.checked);
+  // eslint-disable-next-line no-unused-vars
+  const handleChangeTheme = (event: ChangeEvent<HTMLInputElement>) => {
+    //event.preventDefault();
+    setChecked();
     theme == 'dark' ? changeTheme('light') : changeTheme('dark');
   };
 
@@ -63,7 +63,7 @@ const SignIn: React.FC = () => {
           }}
         />
         <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square>
-          <Switch checked={checked} onChange={changeThemeHandle} />
+          <Switch checked={checked} onChange={handleChangeTheme} />
           <Box
             sx={{
               my: 8,
