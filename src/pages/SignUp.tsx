@@ -19,6 +19,7 @@ import Copyright from 'components/widgets/Copyright';
 import { useTheme } from 'core/hooks/useTheme';
 import { useToggle } from 'core/hooks/useToggle';
 import React, { ChangeEvent, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 //import LoginBackground from './../assets/login-background.png';
 
@@ -71,6 +72,9 @@ const SignUp: React.FC = () => {
 
   return (
     <BackgroundContainer>
+      <Helmet>
+        <title>Cadastro</title>
+      </Helmet>
       <Switch checked={checked} onChange={handleChangeTheme} />
       <SignupContainer maxWidth="sm">
         <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>

@@ -17,6 +17,7 @@ import Copyright from 'components/widgets/Copyright';
 import { useTheme } from 'core/hooks/useTheme';
 import { useToggle } from 'core/hooks/useToggle';
 import React, { ChangeEvent, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const SignIn: React.FC = () => {
   const { theme, changeTheme } = useTheme();
@@ -47,6 +48,9 @@ const SignIn: React.FC = () => {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <Grid container component="main" sx={{ height: '100vh' }}>
         <Grid
           item

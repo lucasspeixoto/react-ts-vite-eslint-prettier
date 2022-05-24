@@ -6,8 +6,7 @@
 
 ## 💻 Projeto
 
-[Template](https://github.com/lucasspeixoto/template_react_typescript_material) É um projeto
-de estruturação de projetos com React, TypeScript e material ui entre outras tecnologias.
+[Template](https://github.com/lucasspeixoto/template_react_typescript_material) É um projeto de um template com algumas configurações prontas para iniciar projetos em React com TypeScript e Material Ui.
 
 ## 🔖 Layout
 
