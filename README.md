@@ -11,7 +11,7 @@ de estruturação de projetos com React, TypeScript e material ui entre outras t
 
 ## 🔖 Layout
 
-![interface](src/assets/layout.png 'Layout')
+![interface](src/assets/layout.gif 'Layout')
 
 ## ✨ Objetivo
 
