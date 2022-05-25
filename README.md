@@ -6,7 +6,7 @@
 
 ## 💻 Projeto
 
-[Template](https://github.com/lucasspeixoto/template_react_typescript_material) É um projeto de um template com algumas configurações prontas para iniciar projetos em React com TypeScript e Material Ui.
+Este é um projeto de template com algumas configurações prontas para iniciar projetos em React com TypeScript e Material UI.
 
 ## 🔖 Layout
 
@@ -14,7 +14,7 @@
 
 ## ✨ Objetivo
 
-O Objetivo inicial foi a facilitação de inicio em projetos com as seguntes tecnologias
+Possuir uma estrutura pronta para iniciar novos projetos com React, TypeScript e Material UI.
 
 - [React](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -39,6 +39,10 @@ $ yarn start
 
 # Abra http://localhost:3000 no seu navegador para ver a aplicação rodando!
 ```
+
+## Code Quality
+
+[![DeepScan grade](https://deepscan.io/api/teams/17837/projects/21176/branches/600162/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=17837&pid=21176&bid=600162)
 
 ## 📝 Licença
 
